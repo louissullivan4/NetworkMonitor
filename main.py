@@ -1,7 +1,8 @@
 import psutil as ps
 import time
+from checknetwork import network_interface
 
-net_interface = 'wlo1'
+net_interface = str(network_interface())
 timer = 2
 
 
@@ -23,3 +24,4 @@ while True:
     print("--------------------------")
     print("--------------------------")
     print("--------------------------")
+    break
